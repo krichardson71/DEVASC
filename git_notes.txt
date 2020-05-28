@@ -2,9 +2,37 @@ initial setup:
   git config --global user.name "your name"
   git config --global user.email "your email address"
 
-local existing repositories:
+
+local repositories:
   git init (adds existing files into the repository (committed state))
+    
+
+create new remote repositories:
+  create from service gui:
+
+  NO EXISTING DATA:
+  git clone https://github.com/<repo>
+  add files
+  git add .
+  git commit -m 'first commit'
+  git remote add origin https://github.com/<repo>
+  git push -u origin master 
   
-remote repositories:
+  OR
+  
+  FOR EXISTING DATA:
+  echo "# some description of your repo" >> README.md
+  git init
+  git commit -m 'first commit'
+  git remote add origin https://github.com/<repo>
+  git push -u origin master
+
+
+branches:
+  git checkout -b <branch>
+  git push origin <branch name> (will add tracking branch)
+
+
+.gitignore:
   
 	
