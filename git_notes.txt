@@ -3,6 +3,5 @@ initial setup:
 	git config --global user.email "your email address"
 
 local existing repositories:
-	git init
-		- adds existing files into the repository (committed state)
+	git init (adds existing files into the repository (committed state))
 	
